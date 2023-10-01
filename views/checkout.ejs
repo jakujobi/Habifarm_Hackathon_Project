@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>checkout</title>
+</head>
+<body>
+    <nav class="header">
+        <h1>Habi Farm</h1>
+    </nav>
+    <main>
+        <h1><%=data.name%></h1>
+        <h4><%=data.cost%></h4>
+        <span>Quantity</span><button class="substract">-</button><input type="number" name="quantity" id="quantity" value="0"><button class="add">+</button>
+        <br>
+        <label for="email">Best Email</label>
+        <br>
+        <input type="text" name="email" id="email" placeholder="Best Email">
+        <br>
+        <label for="card">Card</label>
+        <br>
+        <input type="text" name="c-number" id="c-number">
+        <input type="date" name="c-date" id="c-date">
+        <input type="number" name="cvc" id="cvc" placeholder="CVC">
+        <br>
+        <button>Pay <span><%=data.cost%></span></button>
+    </main>
+</body>
+</html>

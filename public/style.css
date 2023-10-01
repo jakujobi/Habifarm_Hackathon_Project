@@ -1,0 +1,88 @@
+/* default setting */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    line-height:1.5;
+}
+.theSignUp{
+    height:100vh;
+    width:100vw;
+    padding:100px;
+}
+.title{
+    text-align:center;
+}
+.theBody{
+    background-color: cornsilk;
+}
+.header{
+    background-color:aquamarine;
+    text-align:center;
+    color:#fff;
+}
+.footer{
+    background-color:burlywood;
+    text-align:center;
+    color:#fff;
+}
+
+.theSignup{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.signup{
+    width:60%;
+    margin:0 auto;
+}
+.signup > input
+{
+    width:100%;
+    padding:10px;
+}
+.submit-btn{
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    border-radius:7px;
+}
+
+.theChoices{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    
+}
+.choice{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    place-content:center;
+    justify-content:center;
+    gap:40px;
+}
+
+.choice > button{
+    width:20px;
+}
+
+.items{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:1fr;
+    gap:15px;
+}
+
+.item-img > img{
+    width:100%;
+    height:150px;
+}
+
+.item:hover{
+    cursor:pointer;
+}
+
+
+

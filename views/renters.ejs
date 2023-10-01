@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Renters</title>
+</head>
+<body>
+    <nav class="header">
+        <h1>Habi Farm</h1>
+    </nav>
+    <div>
+        <label for="categories">Categories</label>
+        <select id="categories">
+        <option value="types"></option>
+        <option value="tractors">Tractors</option>
+        <option value="harvesting">Harvesting</option>
+        <option value="planting">Planting</option>
+        <option value="crop plantation">Crop Plantation</option>
+        <option value="utility vehicle">Utility Vehicle</option>
+        <option value="tillage">Tillage</option>
+    </select>
+    </div>
+    <div class="flex">
+        <div class="items">
+           
+                <% data.forEach((item)=>{ %>
+                    <a href="/details"><div class="item">
+                        <div class="item-img">
+                        <img src=<%=item.img%> alt="Item Image">
+                        </div>
+                        <p>name:<span class="itemName"><%=item.name%></span></p>
+                        <p>cost: <span class="itemPrice"><%=item.cost%></span></p>
+                        <p>duration: <span class="itemDuration"><%=item.date%></span></p>
+                    </div>
+                </a>
+                <% }) %>
+           
+            <!-- <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+            b<div class="item">
+                <div class="item-img">
+                    <img src="https://blog.machinefinder.com/wp-content/uploads/2013/07/John-Deere-9R.jpg" alt="Item Image">
+                </div>
+                <p>name:<span class="itemName">Tractor</span></p>
+                <p>cost: <span class="itemPrice">$60</span></p>
+                <p>duration: <span class="itemDuration">90</span></p>
+            </div>
+        </div> -->
+    </div>
+    <script src="/app.js" ></script>
+</body>
+
+</html>
