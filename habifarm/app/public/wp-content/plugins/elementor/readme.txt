@@ -4,8 +4,8 @@ Tags: page builder, editor, landing page, drag-and-drop, elementor, visual edito
 Requires at least: 6.0
 Tested up to: 6.3
 Requires PHP: 7.0
-Stable tag: 3.16.4
-Beta tag: 3.16.0-beta4
+Stable tag: 3.16.5
+Beta tag: 3.17.0-beta2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -240,6 +240,11 @@ You can also add a new language via [translate.wordpress.org](https://go.element
 == Changelog ==
 
 See Elementor Developer Edition versions changelog [here](https://go.elementor.com/dev-changelog/)
+
+= 3.16.5 - 2023-10-09 =
+
+* Fix: Widget panel appears empty for Editor role with "Access to edit content only" permission ([#23696](https://github.com/elementor/elementor/issues/23696))
+* Fix: Improved code security enforcement in SVG Icon control
 
 = 3.16.4 - 2023-09-20 =
 
