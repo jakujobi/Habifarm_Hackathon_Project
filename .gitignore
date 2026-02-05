@@ -1,2 +1,62 @@
-
 *.psd
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# WordPress
+wp-config.php
+.htaccess
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.exe
+*.out
+*.o
+*.obj
+*.class
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Node modules (if using npm)
+node_modules/
+package-lock.json
+
+# Composer dependencies
+vendor/
+composer.lock
+
+# Build artifacts
+dist/
+build/
+*.zip
+!Habifarm*.zip
+
+# Database backups
+*.sql.gz
+backup*.sql
+!local.sql
+
+# Uploads (optional - uncomment if needed)
+# wp-content/uploads/
