@@ -33,6 +33,11 @@ desktop.ini
 *.obj
 *.class
 
+# C++ compiled binaries (Linux/macOS)
+Cpp\ Impelemtation/habibit
+Cpp\ Impelemtation/habibit_main
+Cpp\ Impelemtation/habibit_test
+
 # Temporary files
 tmp/
 temp/
